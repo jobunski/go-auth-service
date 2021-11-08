@@ -9,7 +9,7 @@ import (
 func GenerateUUID() string {
 	var OriginalUUID, err = uuid.NewUUID()
 	if err != nil {
-		savedUUId := strings.Replace(OriginalUUID.String(),"-","",-1);
+		savedUUId := strings.Replace(OriginalUUID.String(), "-", "", -1)
 		return savedUUId
 	}
 	fmt.Println("Error thrown when creating UUID")
